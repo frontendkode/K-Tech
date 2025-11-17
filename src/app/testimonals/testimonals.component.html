@@ -16,11 +16,11 @@
 
 
     <p-carousel [value]="testimonials" [numVisible]="3" [numScroll]="1" [circular]="true" [autoplayInterval]="3000"
-      styleClass="custom-carousel" [responsiveOptions]="responsiveOptions" class=" border-3 border-danger">
+      styleClass="custom-carousel" [responsiveOptions]="responsiveOptions">
 
-      <ng-template pTemplate="item" let-item>
-        <div class="card h-100    shadow-sm position-relative overflow-hidden">
-          <div class="position-absolute top-0 end-0 rounded-circle opacity-10"
+      <ng-template pTemplate="item" let-item class="me-2">
+        <div class="card border-0 h-100 shadow-sm  ">
+          <div class="position-absolute me-4 top-0 end-0 rounded-circle opacity-10"
             style="width: 100px; height: 100px; transform: translate(30%, -30%)"
             [ngStyle]="{'background-color': item.color}">
           </div>
